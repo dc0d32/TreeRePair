@@ -31,7 +31,7 @@ BplexTreePrinter::BplexTreePrinter(Grammar & dagGrammarPar,
 
 	traverseTree();
 
-	if (out == &cout) {
+	if (out.rdbuf() == cout.rdbuf()) {
 		out << endl;
 	}
 }
