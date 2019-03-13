@@ -1,0 +1,13 @@
+TYPE = executable
+
+# ADDINCLUDES = -I../TreeRePairCommonsLibrary -I../TreeDePairLibrary -I../TreeRePairLibrary
+ADDINCLUDES = -I../TreeRePairCommonsLibrary -I../TreeRePairLibrary
+# ADDLDFLAGS = ../TreeRePairLibrary/libtreerepair.a ../TreeDePairLibrary/libtreedepair.a ../TreeRePairCommonsLibrary/libtreerepaircommons.a
+ADDLDFLAGS = ../TreeRePairLibrary/libtreerepair.a ../TreeRePairCommonsLibrary/libtreerepaircommons.a
+BIN = TreeRePair
+OBJ = TreeRePair.o
+
+# LDFLAGS = $(ADDLDFLAGS) -lxerces-c
+LDFLAGS = $(ADDLDFLAGS) -lrt
+
+-include ../Makefile.static.common

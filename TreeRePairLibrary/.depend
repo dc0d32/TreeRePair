@@ -1,0 +1,1 @@
+BitWriter.o: BitWriter.cpp BitWriter.h

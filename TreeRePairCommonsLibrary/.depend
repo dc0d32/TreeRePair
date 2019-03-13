@@ -1,0 +1,136 @@
+BinaryTreeConstructor.o: BinaryTreeConstructor.cpp \
+ BinaryTreeConstructor.h TreeConstructor.h TreeRePairTypes.h Symbol.h \
+ TreeRePairMacros.h SymbolInfoContainerHasher.h Grammar.h NodeHasher.h \
+ XmlContentHandler.h Production.h TreeHasher.h TreeNode.h \
+ TreeRePairMode.h TreeDeleter.h TreeTraversal.h Helper.h \
+ DigramPriorityQueue.h TreeRePairConstants.h SymbolInfoContainer.h
+BplexGrammarReader.o: BplexGrammarReader.cpp BplexGrammarReader.h \
+ TreeRePairTypes.h Grammar.h TreeRePairMacros.h NodeHasher.h \
+ TreeRePairConstants.h Symbol.h SymbolInfoContainerHasher.h Digram.h \
+ TreeNode.h TreeRePairMode.h DigramPriorityQueue.h Production.h
+DefaultTreePrinter.o: DefaultTreePrinter.cpp DefaultTreePrinter.h \
+ TreePrinter.h TreeTraversal.h TreeNode.h Symbol.h TreeRePairMacros.h \
+ SymbolInfoContainerHasher.h TreeRePairTypes.h TreeRePairMode.h Grammar.h \
+ NodeHasher.h Production.h
+Digram.o: Digram.cpp Digram.h TreeNode.h Symbol.h TreeRePairMacros.h \
+ SymbolInfoContainerHasher.h TreeRePairTypes.h TreeRePairMode.h Grammar.h \
+ NodeHasher.h DigramPriorityQueue.h
+DigramPriorityQueue.o: DigramPriorityQueue.cpp DigramPriorityQueue.h \
+ TreeRePairMacros.h TreeRePairTypes.h Helper.h TreeNode.h Symbol.h \
+ SymbolInfoContainerHasher.h TreeRePairMode.h Grammar.h NodeHasher.h \
+ Digram.h TreeRePairConstants.h
+EdgeCounter.o: EdgeCounter.cpp EdgeCounter.h TreeTraversal.h TreeNode.h \
+ Symbol.h TreeRePairMacros.h SymbolInfoContainerHasher.h \
+ TreeRePairTypes.h TreeRePairMode.h Grammar.h NodeHasher.h Production.h
+Grammar.o: Grammar.cpp Grammar.h TreeRePairMacros.h TreeRePairTypes.h \
+ NodeHasher.h TreeNode.h Symbol.h SymbolInfoContainerHasher.h \
+ TreeRePairMode.h TreeDeleter.h TreeTraversal.h Production.h
+GrammarPruner.o: GrammarPruner.cpp GrammarPruner.h Grammar.h \
+ TreeRePairMacros.h TreeRePairTypes.h NodeHasher.h TreeNode.h Symbol.h \
+ SymbolInfoContainerHasher.h TreeRePairMode.h Production.h \
+ SymbolReplacer.h TreeTraversal.h EdgeCounter.h RefCountUpdater.h \
+ Helper.h DigramPriorityQueue.h
+Helper.o: Helper.cpp Helper.h DigramPriorityQueue.h TreeRePairMacros.h \
+ TreeRePairTypes.h TreeNode.h Symbol.h SymbolInfoContainerHasher.h \
+ TreeRePairMode.h Grammar.h NodeHasher.h Digram.h TreeRePairConstants.h \
+ SymbolInfoContainer.h XmlTreePrinter.h TreePrinter.h TreeTraversal.h
+Huffman.o: Huffman.cpp Huffman.h HuffmanTreeNode.h TreeRePairMacros.h \
+ TreeRePairTypes.h HuffmanTreeDeleter.h HuffmanTreeTraversal.h \
+ TreeRePairConstants.h Helper.h DigramPriorityQueue.h TreeNode.h Symbol.h \
+ SymbolInfoContainerHasher.h TreeRePairMode.h Grammar.h NodeHasher.h
+HuffmanTreeDeleter.o: HuffmanTreeDeleter.cpp HuffmanTreeDeleter.h \
+ HuffmanTreeTraversal.h HuffmanTreeNode.h TreeRePairMacros.h \
+ TreeRePairTypes.h
+HuffmanTreeNode.o: HuffmanTreeNode.cpp HuffmanTreeNode.h \
+ TreeRePairMacros.h
+HuffmanTreeTraversal.o: HuffmanTreeTraversal.cpp HuffmanTreeTraversal.h \
+ HuffmanTreeNode.h TreeRePairMacros.h TreeRePairTypes.h
+MultiaryTreeConstructor.o: MultiaryTreeConstructor.cpp \
+ MultiaryTreeConstructor.h TreeConstructor.h TreeRePairTypes.h Symbol.h \
+ TreeRePairMacros.h SymbolInfoContainerHasher.h Grammar.h NodeHasher.h \
+ XmlContentHandler.h Production.h TreeHasher.h TreeNode.h \
+ TreeRePairMode.h TreeDeleter.h TreeTraversal.h Helper.h \
+ DigramPriorityQueue.h TreeRePairConstants.h SymbolInfoContainer.h
+NodeHasher.o: NodeHasher.cpp NodeHasher.h TreeNode.h Symbol.h \
+ TreeRePairMacros.h SymbolInfoContainerHasher.h TreeRePairTypes.h \
+ TreeRePairMode.h Grammar.h
+Production.o: Production.cpp Production.h TreeRePairMacros.h \
+ TreeRePairTypes.h Grammar.h NodeHasher.h Symbol.h \
+ SymbolInfoContainerHasher.h TreeNode.h TreeRePairMode.h XmlTreePrinter.h \
+ TreePrinter.h TreeTraversal.h TreeDeleter.h Digram.h \
+ DigramPriorityQueue.h TreeCopier.h
+ProductionTreeContainer.o: ProductionTreeContainer.cpp \
+ ProductionTreeContainer.h TreeRePairMacros.h TreeNode.h Symbol.h \
+ SymbolInfoContainerHasher.h TreeRePairTypes.h TreeRePairMode.h Grammar.h \
+ NodeHasher.h Production.h
+RefCountUpdater.o: RefCountUpdater.cpp RefCountUpdater.h TreeTraversal.h \
+ TreeNode.h Symbol.h TreeRePairMacros.h SymbolInfoContainerHasher.h \
+ TreeRePairTypes.h TreeRePairMode.h Grammar.h NodeHasher.h Production.h
+Symbol.o: Symbol.cpp Symbol.h TreeRePairMacros.h \
+ SymbolInfoContainerHasher.h TreeRePairTypes.h Helper.h \
+ DigramPriorityQueue.h TreeNode.h TreeRePairMode.h Grammar.h NodeHasher.h \
+ TreeRePairConstants.h SymbolInfoContainer.h
+SymbolInfoContainerHasher.o: SymbolInfoContainerHasher.cpp \
+ SymbolInfoContainerHasher.h SymbolInfoContainer.h TreeRePairMacros.h
+SymbolInfoContainer.o: SymbolInfoContainer.cpp SymbolInfoContainer.h \
+ TreeRePairMacros.h
+SymbolsRanksCounter.o: SymbolsRanksCounter.cpp SymbolsRanksCounter.h \
+ XmlContentHandler.h TreeRePairTypes.h Symbol.h TreeRePairMacros.h \
+ SymbolInfoContainerHasher.h Grammar.h NodeHasher.h TreeRePairMode.h \
+ Helper.h DigramPriorityQueue.h TreeNode.h TreeRePairConstants.h \
+ SymbolInfoContainer.h
+SymbolReplacer.o: SymbolReplacer.cpp SymbolReplacer.h TreeTraversal.h \
+ TreeNode.h Symbol.h TreeRePairMacros.h SymbolInfoContainerHasher.h \
+ TreeRePairTypes.h TreeRePairMode.h Grammar.h NodeHasher.h Production.h \
+ TreeCopier.h RefCountUpdater.h Helper.h DigramPriorityQueue.h
+TablePrinter.o: TablePrinter.cpp TablePrinter.h TreeRePairConstants.h \
+ Helper.h DigramPriorityQueue.h TreeRePairMacros.h TreeRePairTypes.h \
+ TreeNode.h Symbol.h SymbolInfoContainerHasher.h TreeRePairMode.h \
+ Grammar.h NodeHasher.h
+TextualGrammarReader.o: TextualGrammarReader.cpp TextualGrammarReader.h \
+ TreeRePairMacros.h Grammar.h TreeRePairTypes.h NodeHasher.h Production.h \
+ Helper.h DigramPriorityQueue.h TreeNode.h Symbol.h \
+ SymbolInfoContainerHasher.h TreeRePairMode.h TreeRePairConstants.h
+TreeConstructor.o: TreeConstructor.cpp TreeConstructor.h \
+ TreeRePairTypes.h Symbol.h TreeRePairMacros.h \
+ SymbolInfoContainerHasher.h Grammar.h NodeHasher.h XmlContentHandler.h \
+ Production.h TreeHasher.h TreeNode.h TreeRePairMode.h TreeDeleter.h \
+ TreeTraversal.h ProductionTreeContainer.h
+TreeCopier.o: TreeCopier.cpp TreeCopier.h TreeTraversal.h TreeNode.h \
+ Symbol.h TreeRePairMacros.h SymbolInfoContainerHasher.h \
+ TreeRePairTypes.h TreeRePairMode.h Grammar.h NodeHasher.h Production.h
+TreeDeleter.o: TreeDeleter.cpp TreeDeleter.h TreeTraversal.h TreeNode.h \
+ Symbol.h TreeRePairMacros.h SymbolInfoContainerHasher.h \
+ TreeRePairTypes.h TreeRePairMode.h Grammar.h NodeHasher.h
+TreeGenerator.o: TreeGenerator.cpp TreeGenerator.h Grammar.h \
+ TreeRePairMacros.h TreeRePairTypes.h NodeHasher.h TreeNode.h Symbol.h \
+ SymbolInfoContainerHasher.h TreeRePairMode.h Production.h \
+ TreeRePairConstants.h Helper.h DigramPriorityQueue.h
+TreeNode.o: TreeNode.cpp TreeNode.h Symbol.h TreeRePairMacros.h \
+ SymbolInfoContainerHasher.h TreeRePairTypes.h TreeRePairMode.h Grammar.h \
+ NodeHasher.h Production.h Digram.h DigramPriorityQueue.h Helper.h
+TreePrinter.o: TreePrinter.cpp TreePrinter.h TreeTraversal.h TreeNode.h \
+ Symbol.h TreeRePairMacros.h SymbolInfoContainerHasher.h \
+ TreeRePairTypes.h TreeRePairMode.h Grammar.h NodeHasher.h
+TreeRePairMode.o: TreeRePairMode.cpp TreeRePairMode.h TreeRePairMacros.h \
+ TreeRePairConstants.h
+TreeTraversal.o: TreeTraversal.cpp TreeTraversal.h TreeNode.h Symbol.h \
+ TreeRePairMacros.h SymbolInfoContainerHasher.h TreeRePairTypes.h \
+ TreeRePairMode.h Grammar.h NodeHasher.h
+UniversalTreeTraverser.o: UniversalTreeTraverser.cpp \
+ UniversalTreeTraverser.h TreeTraversal.h TreeNode.h Symbol.h \
+ TreeRePairMacros.h SymbolInfoContainerHasher.h TreeRePairTypes.h \
+ TreeRePairMode.h Grammar.h NodeHasher.h Production.h
+XmlContentHandler.o: XmlContentHandler.cpp XmlContentHandler.h
+XmlEcho.o: XmlEcho.cpp XmlEcho.h XmlContentHandler.h
+XMLParser.o: XMLParser.cpp XMLParser.h XmlContentHandler.h
+XMLTreeParser.o: XMLTreeParser.cpp XMLTreeParser.h TreeNode.h Symbol.h \
+ TreeRePairMacros.h SymbolInfoContainerHasher.h TreeRePairTypes.h \
+ TreeRePairMode.h Grammar.h NodeHasher.h TreeConstructor.h \
+ XmlContentHandler.h Production.h TreeHasher.h TreeDeleter.h \
+ TreeTraversal.h BinaryTreeConstructor.h MultiaryTreeConstructor.h \
+ SymbolsRanksCounter.h XMLParser.h XmlEcho.h
+XmlTreePrinter.o: XmlTreePrinter.cpp XmlTreePrinter.h TreePrinter.h \
+ TreeTraversal.h TreeNode.h Symbol.h TreeRePairMacros.h \
+ SymbolInfoContainerHasher.h TreeRePairTypes.h TreeRePairMode.h Grammar.h \
+ NodeHasher.h TreeRePairConstants.h Helper.h DigramPriorityQueue.h

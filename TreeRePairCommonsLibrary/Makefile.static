@@ -1,0 +1,7 @@
+TYPE = library
+
+BIN = libtreerepaircommons.a
+
+OBJ = BinaryTreeConstructor.o BplexGrammarReader.o DefaultTreePrinter.o Digram.o DigramPriorityQueue.o EdgeCounter.o Grammar.o GrammarPruner.o Helper.o Huffman.o HuffmanTreeDeleter.o HuffmanTreeNode.o HuffmanTreeTraversal.o MultiaryTreeConstructor.o NodeHasher.o Production.o ProductionTreeContainer.o RefCountUpdater.o Symbol.o SymbolInfoContainerHasher.o SymbolInfoContainer.o SymbolsRanksCounter.o SymbolReplacer.o TablePrinter.o TextualGrammarReader.o TreeConstructor.o TreeCopier.o TreeDeleter.o TreeGenerator.o TreeNode.o TreePrinter.o TreeRePairMode.o TreeTraversal.o UniversalTreeTraverser.o XmlContentHandler.o XmlEcho.o XMLParser.o XMLTreeParser.o XmlTreePrinter.o
+
+-include ../Makefile.static.common

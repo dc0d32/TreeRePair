@@ -1,0 +1,19 @@
+all:
+	cd ./TreeRePairCommonsLibrary; make -f Makefile.static
+	cd ./TreeDePairLibrary; make -f Makefile.static
+	cd ./TreeDePair; make -f Makefile.static
+	cd ./TreeRePairLibrary; make -f Makefile.static
+	cd ./TreeRePair; make -f Makefile.static
+
+tool:
+	cd ./TreeRePairTool; make -f Makefile.static
+
+clean:
+	cd ./TreeRePairCommonsLibrary; make -f Makefile.static clean
+	cd ./TreeRePairLibrary; make -f Makefile.static clean
+	cd ./TreeRePair; make -f Makefile.static clean
+	cd ./TreeDePairLibrary; make -f Makefile.static clean
+	cd ./TreeDePair; make -f Makefile.static clean
+
+clean-tool:
+	cd ./TreeRePairTool; make -f Makefile.static clean

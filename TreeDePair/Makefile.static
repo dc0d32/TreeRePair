@@ -1,0 +1,11 @@
+TYPE = executable
+
+ADDINCLUDES = -I../TreeRePairCommonsLibrary -I../TreeDePairLibrary
+ADDLDFLAGS = ../TreeDePairLibrary/libtreedepair.a ../TreeRePairCommonsLibrary/libtreerepaircommons.a
+BIN = TreeDePair
+OBJ = TreeDePair.o
+
+# LDFLAGS = $(ADDLDFLAGS) -lxerces-c -lsqlite3 -lboost_regex
+LDFLAGS = $(ADDLDFLAGS) -lrt
+
+-include ../Makefile.static.common

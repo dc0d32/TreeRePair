@@ -1,0 +1,9 @@
+TYPE = library
+
+ADDINCLUDES = -I../TreeRePairCommonsLibrary
+
+BIN = libtreedepair.a
+
+OBJ = BitReader.o HuffmanDecoding.o HuffmanSuccinctReader.o TreeDePairAlgorithm.o
+
+-include ../Makefile.static.common

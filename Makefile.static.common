@@ -1,0 +1,40 @@
+CC      = /usr/bin/g++
+
+# CFLAGS = -Wall -DDEBUG -fPIC -I/usr/include $(ADDINCLUDES) -g -pg -Wno-deprecated -c
+# CFLAGS = -Wall -DDEBUG -fPIC -I/usr/include $(ADDINCLUDES) -g -Wno-deprecated -c
+# CFLAGS = -Wall -DSIBLINGS -fPIC -I/usr/include $(ADDINCLUDES) -O3 -Wno-deprecated -c
+# CFLAGS = -Wall -fPIC -I/usr/include $(ADDINCLUDES) -O3 -Wno-deprecated -c
+
+CFLAGS = -m32 -Wall -fPIC -I/usr/include $(ADDINCLUDES) -O3 -Wno-deprecated -c
+# CFLAGS = -m32 -Wall -fPIC -I/usr/include $(ADDINCLUDES) -g -Wno-deprecated -c
+# CFLAGS = -m32 -Wall -fPIC -I/usr/include $(ADDINCLUDES) -g -pg -Wno-deprecated -c
+# CFLAGS = -m32 -DDEBUG -Wall -fPIC -I/usr/include $(ADDINCLUDES) -g -Wno-deprecated -c
+
+DEPENDFILE = .depend
+
+SRC = $(OBJ:%.o=%.cpp)
+
+all: $(OBJ) Makefile.static
+ifeq ($(TYPE),executable)
+	$(CC) -m32 -o $(BIN) $(OBJ) $(ADDINCLUDES) $(LDFLAGS)
+	# $(CC) -m32 -o $(BIN) $(OBJ) $(ADDINCLUDES) $(LDFLAGS) -g
+	# $(CC) -m32 -o $(BIN) $(OBJ) $(ADDINCLUDES) $(LDFLAGS) -g -pg
+	# $(CC) -o $(BIN) $(OBJ) $(ADDINCLUDES) $(LDFLAGS)
+	# $(CC) -o $(BIN) $(OBJ) $(ADDINCLUDES) $(LDFLAGS) -g
+	# $(CC) -o $(BIN) $(OBJ) $(ADDINCLUDES) $(LDFLAGS) -pg
+else
+	ar cr $(BIN) $(OBJ)
+endif
+
+%.o: %.cpp
+	$(CC) $(CFLAGS) $<
+
+dep: $(SRC)
+	$(CC) -MM $(SRC) > $(DEPENDFILE)
+
+.PHONY: clean
+clean:
+	rm -rf $(BIN) $(OBJ)
+	$(DELETING)
+
+-include $(DEPENDFILE)

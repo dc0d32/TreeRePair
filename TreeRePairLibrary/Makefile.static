@@ -1,0 +1,10 @@
+TYPE = library
+
+# ADDINCLUDES = -I../TreeRePairCommonsLibrary -I../TreeDePairLibrary
+ADDINCLUDES = -I../TreeRePairCommonsLibrary
+
+BIN = libtreerepair.a
+
+OBJ = BitWriter.o BplexGrammarWriter.o BplexTreePrinter.o DigramCounter.o DigramReplacer.o GrammarWriter.o HuffmanCoding.o HuffmanSuccinctWriter.o HuffmanTreeCounter.o HuffmanTreeWriter.o OccurrenceFinder.o PlaceholderInserter.o ReferencesTreeCounter.o Statistics.o TextualGrammarWriter.o TreeRePairAlgorithm.o
+
+-include ../Makefile.static.common
